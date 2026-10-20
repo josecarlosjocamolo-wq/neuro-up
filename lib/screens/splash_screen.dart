@@ -25,9 +25,13 @@ class _SplashScreenState extends State<SplashScreen> {
       // Solo en nativo: cargar video splash
       _videoController = VideoPlayerController.asset('assets/videos/logo.mp4')
         ..initialize().then((_) {
+          if (!mounted) return;
           setState(() => _isVideoInitialized = true);
           _videoController!.play();
           _videoController!.setLooping(false);
+        }).catchError((_) {
+          // Video no disponible: se usa el GIF del logo en su lugar.
+          if (mounted) setState(() {});
         });
     }
 
@@ -44,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
       context,
       PageRouteBuilder(
         pageBuilder: (context, animation, secondaryAnimation) =>
-          isLoggedIn ? const HomePage() : const BienvenidaPage(),
+            isLoggedIn ? const HomePage() : const BienvenidaPage(),
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
           return FadeTransition(opacity: animation, child: child);
         },
@@ -86,7 +90,10 @@ class _SplashScreenState extends State<SplashScreen> {
                               child: VideoPlayer(_videoController!),
                             ),
                           )
-                        : const SizedBox.shrink()),
+                        : Image.asset(
+                            'assets/gifs/logo.gif',
+                            fit: BoxFit.contain,
+                          )),
               ),
             ),
             // Espacio fantasma exacto que ocupan los botones en bienvenida_page

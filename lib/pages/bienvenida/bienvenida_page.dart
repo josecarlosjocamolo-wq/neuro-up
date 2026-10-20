@@ -22,12 +22,17 @@ class _BienvenidaPageState extends State<BienvenidaPage> {
 
     if (!kIsWeb) {
       // Video del Logo — solo en nativo
-      _logoVideoController = VideoPlayerController.asset('assets/videos/logo.mp4')
-        ..initialize().then((_) {
-          setState(() => _isLogoVideoInitialized = true);
-          _logoVideoController!.play();
-          _logoVideoController!.setLooping(true);
-        });
+      _logoVideoController =
+          VideoPlayerController.asset('assets/videos/logo.mp4')
+            ..initialize().then((_) {
+              if (!mounted) return;
+              setState(() => _isLogoVideoInitialized = true);
+              _logoVideoController!.play();
+              _logoVideoController!.setLooping(true);
+            }).catchError((_) {
+              // Video no disponible: se usa el GIF del logo en su lugar.
+              if (mounted) setState(() {});
+            });
     }
   }
 
@@ -64,7 +69,10 @@ class _BienvenidaPageState extends State<BienvenidaPage> {
                               child: VideoPlayer(_logoVideoController!),
                             ),
                           )
-                        : const SizedBox.shrink()),
+                        : Image.asset(
+                            'assets/gifs/logo.gif',
+                            fit: BoxFit.contain,
+                          )),
               ),
             ),
             const SizedBox(height: 40),

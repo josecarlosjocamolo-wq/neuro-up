@@ -5,6 +5,35 @@
 
 ---
 
+## Capturas
+
+<table>
+  <tr>
+    <td align="center"><b>Inicio</b><br><img src="docs/screenshots/01-inicio.png" width="250" alt="Pantalla de inicio con prioridades y Pomodoro"></td>
+    <td align="center"><b>Agenda</b><br><img src="docs/screenshots/02-agenda.png" width="250" alt="Agenda con tareas del día"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Enfoque · Pomodoro</b><br><img src="docs/screenshots/05-pomodoro.png" width="250" alt="Temporizador de enfoque"></td>
+    <td align="center"><b>Chat con UPI (IA)</b><br><img src="docs/screenshots/06-chat-ia.png" width="250" alt="Chat con asistente de IA"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Tests cognitivos</b><br><img src="docs/screenshots/03-tests.png" width="250" alt="Tests de atención, memoria y emoción"></td>
+    <td align="center"><b>Perfil y progreso</b><br><img src="docs/screenshots/04-perfil.png" width="250" alt="Perfil con XP, racha y estadísticas"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Preferencias · Modo Calma</b><br><img src="docs/screenshots/04b-perfil-preferencias.png" width="250" alt="Preferencias con Modo Calma"></td>
+    <td align="center"><b>Bienvenida</b><br><img src="docs/screenshots/07-bienvenida.png" width="250" alt="Pantalla de bienvenida"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Registro</b><br><img src="docs/screenshots/08-registro.png" width="250" alt="Formulario de registro"></td>
+    <td align="center"><b>Confirmación de salida</b><br><img src="docs/screenshots/09-confirmar-salida.png" width="250" alt="Diálogo de cierre de sesión"></td>
+  </tr>
+</table>
+
+> Capturas reales tomadas en el emulador Android (API 36) con datos de demostración.
+
+---
+
 ## Características
 
 - **Enfoque Pomodoro** con estadísticas reales acumuladas (sesiones, minutos, racha).

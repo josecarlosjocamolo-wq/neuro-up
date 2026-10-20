@@ -66,3 +66,12 @@ app.*.map.json
 *.mobileprovision
 *.cer
 
+# ---------------------------------------------------------------------
+# Artefactos locales de desarrollo (regenerables, no van al repo)
+# ---------------------------------------------------------------------
+/sqlite3.dll
+tool/*.db
+tool/*.bin
+tool/*.xml
+docs/screenshots/_*.png
+
