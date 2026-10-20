@@ -1,0 +1,82 @@
+name: neuro_up_app
+description: "Neuro Up App"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^10.7.0
+  lottie: ^2.7.0
+  confetti: ^0.7.0
+
+  # Backend / Servicios (100% local, sin nube)
+  sqflite: ^2.3.3
+  sqflite_common_ffi: ^2.3.3
+  path: ^1.9.0
+  path_provider: ^2.1.4
+  crypto: ^3.0.3
+  google_sign_in: ^6.2.1
+  shared_preferences: ^2.2.2
+  http: ^1.1.0
+
+  # Multimedia
+  video_player: ^2.10.1
+  chewie: ^1.13.0
+  image_picker: ^1.0.4
+
+  # Permisos
+  permission_handler: ^11.0.1
+
+  # Localización
+  flutter_localizations:
+    sdk: flutter
+
+  # Utilidades
+  url_launcher: ^6.2.2
+  firebase_core: ^4.7.0
+  firebase_messaging: ^16.2.0
+  flutter_local_notifications: ^17.2.4
+  timezone: ^0.9.4
+  flutter_timezone: ^5.0.2
+  fl_chart: ^1.2.0
+  flutter_animate: ^4.5.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/new_logo.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/gifs/logo.gif
+    - assets/gifs/logo2.gif
+    - assets/gifs/olas.gif
+    - assets/gifs/olas2.gif
+    - assets/gifs/upicora.gif
+    - assets/gifs/upiaudi.gif
+    - assets/gifs/upichat.gif
+    - assets/gifs/upifes.gif
+    - assets/gifs/upiconfig.gif
+    - assets/gifs/upica.gif
+    - assets/gifs/upicoreano.gif
+    - assets/gifs/upies.gif
+    - assets/gifs/upisa.gif
+    - assets/gifs/upitest.gif

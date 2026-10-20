@@ -1,0 +1,251 @@
+{
+  "animaciones": {
+    "bienvenida": {
+      "logo": {
+        "ruta": "assets/gifs/logo.gif",
+        "ancho": 800,
+        "alto": 800,
+        "posicion": "superior",
+        "margen_superior": -180,
+        "duracion": 3000,
+        "transicion": "fadeIn"
+      },
+      "olas": {
+        "ruta": "assets/gifs/olas.gif", 
+        "ancho": "full",
+        "alto": 100,
+        "posicion": "inferior",
+        "loop": true,
+        "opacidad": 0.8
+      }
+    },
+    "registro": {
+      "logo2": {
+        "ruta": "assets/gifs/logo2.gif",
+        "ancho": 180,
+        "alto": 180,
+        "posicion": "centro-superior",
+        "margen_superior": 100,
+        "animacion_entrada": "scaleUp"
+      },
+      "olas2": {
+        "ruta": "assets/gifs/olas2.gif",
+        "ancho": "full",
+        "alto": 200,
+        "posicion": "superior",
+        "margen_superior": 20,
+        "efecto": "wave"
+      }
+    },
+    "login": {
+      "logo2": {
+        "ruta": "assets/gifs/logo2.gif",
+        "ancho": 180,
+        "alto": 180,
+        "posicion": "centro-superior",
+        "margen_superior": 100,
+        "animacion_entrada": "scaleUp"
+      },
+      "olas2": {
+        "ruta": "assets/gifs/olas2.gif",
+        "ancho": "full",
+        "alto": 200,
+        "posicion": "superior",
+        "margen_superior": 20,
+        "efecto": "wave"
+      }
+    },
+    "home": {
+      "upicora": {
+        "ruta": "assets/gifs/upicora.gif",
+        "ancho": 130,
+        "alto": 130,
+        "posicion": "tarjeta-superior",
+        "descripcion": "GIF circular en el header junto al saludo",
+        "forma": "circulo",
+        "borde": "2px_solid_white"
+      },
+      "upiaudi": {
+        "ruta": "assets/gifs/upiaudi.gif",
+        "ancho": 250,
+        "alto": 250,
+        "posicion": "lado-temporizador",
+        "descripcion": "GIF al lado derecho del temporizador Pomodoro",
+        "alineacion": "derecha"
+      },
+      "upies": {
+        "ruta": "assets/gifs/upies.gif",
+        "ancho": 80,
+        "alto": 80,
+        "posicion": "progreso-tareas",
+        "descripcion": "GIF que muestra estado normal en progreso de tareas",
+        "contexto": "progreso_normal"
+      },
+      "upifes": {
+        "ruta": "assets/gifs/upifes.gif",
+        "ancho": 100,
+        "alto": 100,
+        "posicion": "dialogo-felicidades",
+        "descripcion": "GIF que aparece cuando se completa una tarea exitosamente",
+        "contexto": "celebracion",
+        "duracion_visible": 5000
+      }
+    },
+    "tests": {
+      "upitest": {
+        "ruta": "assets/gifs/upitest.gif",
+        "ancho": 300,
+        "alto": 200,
+        "posicion": "header-principal",
+        "descripcion": "GIF principal en la página de tests mentales",
+        "margen_superior": 20,
+        "margen_inferior": 20,
+        "borde_radio": 20,
+        "sombra": true,
+        "loop": true,
+        "auto_play": true
+      },
+      "upitest_mini": {
+        "ruta": "assets/gifs/upitest.gif",
+        "ancho": 80,
+        "alto": 60,
+        "posicion": "tarjeta-test",
+        "descripcion": "GIF miniaturizado en las tarjetas de test individuales",
+        "forma": "rectangulo",
+        "borde_radio": 12,
+        "contexto": "lista_tests"
+      },
+      "upitest_resultados": {
+        "ruta": "assets/gifs/upifes.gif",
+        "ancho": 120,
+        "alto": 120,
+        "posicion": "resultados-exitosos",
+        "descripcion": "GIF que aparece cuando se completan tests exitosamente",
+        "contexto": "test_completado",
+        "duracion_visible": 4000
+      }
+    },
+    "calendario": {
+      "upica": {
+        "ruta": "assets/gifs/upica.gif",
+        "ancho": 80,
+        "alto": 80,
+        "posicion": "header",
+        "descripcion": "GIF en el header del calendario",
+        "forma": "circulo",
+        "borde": "2px_solid_white",
+        "margen_superior": 10,
+        "margen_izquierdo": 10
+      },
+      "upica_eventos": {
+        "ruta": "assets/gifs/upica.gif",
+        "ancho": 120,
+        "alto": 120,
+        "posicion": "tarjeta-eventos",
+        "descripcion": "GIF decorativo en la tarjeta de eventos cuando hay eventos",
+        "forma": "circulo",
+        "borde": "2px_solid_azul",
+        "margen_inferior": 20
+      },
+      "upica_vacio": {
+        "ruta": "assets/gifs/upica.gif",
+        "ancho": 150,
+        "alto": 150,
+        "posicion": "estado-vacio",
+        "descripcion": "GIF en estado vacío cuando no hay eventos",
+        "forma": "circulo",
+        "borde": "2px_solid_azul",
+        "contexto": "sin_eventos"
+      }
+    },
+    "tareas": {
+      "estado_completado": {
+        "ruta": "assets/gifs/upifes_mini.gif",
+        "ancho": 24,
+        "alto": 24,
+        "posicion": "item-tarea",
+        "descripcion": "Icono de celebración en tareas completadas"
+      }
+    }
+  },
+  "configuracion": {
+    "autoplay": true,
+    "loop": true,
+    "calidad": "alta",
+    "plataforma": "multiplataforma",
+    "cache_animaciones": true,
+    "preload_animaciones": true,
+    "max_cache_size": "50MB",
+    "performance_mode": "balanced"
+  },
+  "comportamiento": {
+    "transiciones": {
+      "duracion_estandar": 500,
+      "tipo": "fadeInOut",
+      "curva": "easeInOut"
+    },
+    "eventos": {
+      "on_complete_task": {
+        "animacion": "upifes",
+        "confetti": true,
+        "duracion": 3000
+      },
+      "on_add_task": {
+        "animacion": "scaleFeedback",
+        "duracion": 1000
+      },
+      "on_calendar_event_add": {
+        "animacion": "upica",
+        "duracion": 2000
+      },
+      "on_calendar_empty": {
+        "animacion": "upica_vacio",
+        "duracion": 0
+      },
+      "on_test_complete": {
+        "animacion": "upitest_resultados",
+        "confetti": true,
+        "duracion": 4000
+      },
+      "on_test_start": {
+        "animacion": "upitest",
+        "duracion": 2000
+      }
+    }
+  },
+  "estadisticas": {
+    "total_animaciones": 14,
+    "paginas_con_animaciones": ["bienvenida", "registro", "login", "home", "tests", "calendario", "tareas"],
+    "total_gifs": 11,
+    "gifs_unicos": ["logo", "logo2", "olas", "olas2", "upicora", "upiaudi", "upies", "upifes", "upica", "upitest"],
+    "peso_total_estimado": "25MB",
+    "ultima_actualizacion": "2024-12-11",
+    "version_animaciones": "1.4.0"
+  },
+  "metadata": {
+    "autor": "Neuro Up Team",
+    "version_app": "1.0.0",
+    "fecha_compilacion": "2024-12-11",
+    "compatibilidad": {
+      "flutter": ">=3.0.0",
+      "dart": ">=2.17.0"
+    },
+    "estructura_archivos": {
+      "gifs_principales": [
+        "logo.gif",
+        "logo2.gif", 
+        "olas.gif",
+        "olas2.gif",
+        "upicora.gif",
+        "upiaudi.gif",
+        "upies.gif",
+        "upifes.gif",
+        "upica.gif",
+        "upitest.gif"
+      ],
+      "gifs_secundarios": [
+        "upifes_mini.gif"
+      ]
+    }
+  }
+}

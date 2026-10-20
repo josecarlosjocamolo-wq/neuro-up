@@ -1,0 +1,68 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ---------------------------------------------------------------------
+# Secretos y credenciales  (NUNCA subir a un repositorio público)
+# ---------------------------------------------------------------------
+# Variables de entorno con claves de API (IA, Supabase, etc.)
+.env
+.env.*
+!.env.example
+
+# Configuración de Firebase/Google (contiene una API key):
+# el archivo real se ignora; solo se sube la plantilla.
+/android/app/google-services.json
+
+# Firmas de Android (release keystores y su contraseña)
+*.jks
+*.keystore
+/android/key.properties
+
+# Certificados iOS y claves provisionales
+*.p12
+*.mobileprovision
+*.cer
+

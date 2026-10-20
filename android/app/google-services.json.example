@@ -1,0 +1,30 @@
+{
+  "_comentario": "PLANTILLA. Copia este archivo sobre android/app/google-services.json con la configuracion real de tu proyecto de Firebase (consola > Configuracion de la app > Android). El archivo real NO se sube a git.",
+  "project_info": {
+    "project_number": "000000000000",
+    "project_id": "TU_PROJECT_ID",
+    "storage_bucket": "TU_PROJECT_ID.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:000000000000:android:0000000000000000000000",
+        "android_client_info": {
+          "package_name": "com.example.neuro_up"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "TU_GOOGLE_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
